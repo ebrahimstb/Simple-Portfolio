@@ -10,34 +10,64 @@
 </head>
 <body>
       <header class="new">
-          <p class="logo">ASHRAB <span>.</span></p>
-          <ul class="main-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Project</a>
-                    <ul id="sub-nav1">
-                        <li class="icon1"><a href="#">Bekadims</a></li>
-                        <li class="icon2"><a href="#">first</a></li>
-                        <li><a href="#">Parallax</a></li>
-                    </ul>
-              </li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a>
-                <ul id="sub-nav2">
-                    <li><a href="#">map</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">directions</a></li>
-                </ul>
-              </li>
-          </ul>
-          <button disabled="disabled" id="nav-button">BOOK RESERVATION</button>
+        <div class="logo">ASHRAB</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li class="navi1">
+                    <a href="#first-page">Home</a>
+                </li>
+                <li class="navi2">
+                    <a href="#third-page">Projects</a>
+                </li>
+                <li class="navi3">
+                    <a href="#forth-page">Blog</a>
+                </li>
+                <li class="navi4">
+                    <a href="#cont">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="reserv">Book Reservation</div>
+          <!-- <p class="logo">ASHRAB <span>.</span></p>
+          <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+          <nav class="nav-bar">
+            <ul class="main-nav">
+                <li><a href="#first-page">Home</a></li>
+                <li><a href="#third-page">Project</a>
+                      <ul id="sub-nav1">
+                          <li class="icon1"><a href="#">Bekadims</a></li>
+                          <li class="icon2"><a href="#">first</a></li>
+                          <li><a href="#">Parallax</a></li>
+                      </ul>
+                </li>
+                <li><a href="#forth-page">Blog</a></li>
+                <li><a href="#cont">Contact</a>
+                  <ul id="sub-nav2">
+                      <li><a href="#">map</a></li>
+                      <li><a href="#">services</a></li>
+                      <li><a href="#">directions</a></li>
+                  </ul>
+                </li>
+            </ul>
+          <div id="nav-button">BOOK RESERVATION</div>
+        </nav> -->
       </header>
     <section id="first-page">
         <div id="intro__housing">
             <div class="intro1">
                 <h1 class="classy">IBRAHIM</br>ABDULAZEEZ</h1>
                 <hr>
-                <div class="connect"><a href="#">INSTAGRAM</a> | <a href="#">Linkdeln</a></br>
-                    <a href="#">Github</a> | <a href="#">Twitter</a>
+                <div class="connect"><a href="#">INSTAGRAM</a>|<a href="#">Linkdeln</a></br>
+                    <a href="#">Github</a>|<a href="#">Twitter</a>
                 </div>
                 <button disabled="disabled" class="btn1">CONTACT ME</button>
             </div>
@@ -93,7 +123,7 @@
                 <div class="item">item 4</div>
             </div>
     </section>
-    <section class="forth-page">
+    <section id="forth-page">
         <div class="port-text">
             <h5>LATEST NEWS</h5>
             <H1>MY Latest Articles [twitter]</H1>
@@ -148,7 +178,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="cont">
         <div class="port-text">
             <h5>CONTACT US</h5>
             <H1>Ways To Contact Me</H1>
@@ -171,7 +201,7 @@
             </button>
             <button class="directions">
                 <span><i class="bi bi-twitter"></i></span>
-                <a href="">ebrahik__stb</a>
+                <a href="">ebrahim__stb</a>
             </button>
             <button class="directions">
                 <span><i class="bi bi-github"></i></span>
@@ -186,6 +216,6 @@
         <hr>
         <p class="copy">copyright-tooltils | All Right Reserved</p>
     </footer>
-    <script src="/portfolio.js"></script>
+    <script src="/portfolio.js"> </script>
 </body>
 </html>

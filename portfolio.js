@@ -1,60 +1,30 @@
-//Dropdown for the sidebar menu for mobile.
-function expandMenu () {
-	let sidebarMenu = document.getElementById('sidebarMenu');
-	
-	if (sidebarMenu.classList.contains('open')) {
-		sidebarMenu.classList.remove('open');
-	} else {
-		sidebarMenu.classList.add('open');
-	}
+hamburger = document.querySelector(".hamburger"); 
+let kali = hamburger.onclick = function() {
+	navBar = document.querySelector(".nav-bar");
+	navBar.classList.toggle("active");
 }
+console.log(kali())
+turnBacka = document.querySelector(".navi1");
+turnBacka.onclick = ()=> kali()
 
-//Hamburger button toggle effect.
-function navToggle () {
-	let navIcon = document.getElementById('nav-icon');
+turnBackb = document.querySelector(".navi2");
+turnBackb.onclick = ()=> kali()
 
-	if (navIcon.classList.contains('open')) {
-		navIcon.classList.remove('open');
-	} else {
-		navIcon.classList.add('open');
-	}
-}
+turnBackc = document.querySelector(".navi3");
+turnBackc.onclick = ()=> kali()
 
-//Add overlay when clicking menu button. BROKEN
-function overlayToggle () {
-	let overlay = document.getElementById('overlay');
+turnBackd = document.querySelector(".navi4");
+turnBackd.onclick = ()=> kali()
 
-	if (overlay.classList.contains('active')) {
-		overlay.classList.remove('active');
-	} else {
-		overlay.classList.add('active');
-	}
-}
+//create a sub nav and make them display and hide 
 
 
+// Create the content you want to hide. Put it inside a DIV and give it an ID. Let's call our DIV 'hideaway'. If you have more than one on a page, give them different names. You also need to set the style to "display:none;" if you want it to start off hidden. It should look like this:
+// <div id="hideaway" style="display:none;">Here's the hidden content</div>
+// Create your link and put in the following Javascript:
+// <a href="javascript:;" onClick="document.getElementById('hideaway').style.display='block';">Reveal hidden content</a>
+// To create a link that hides it again, using the following Javascript:
+// <a href="javascript:;" onClick="document.getElementById('hideaway').style.display='none';">Hide content again</a>
+// The content that you make appear and disappear can include image tags and any other HTML - it's just text in the above to make it easier to understand.
 
-//Assiging dropdown and button toggle effect to hamburger button.
-const menuButton = document.getElementById("menu-button");
-
-menuButton.addEventListener("click", expandMenu);
-menuButton.addEventListener("click", navToggle);
-menuButton.addEventListener("click", overlayToggle);
-
-
-//Accordion Buttons for menu.
-const accordionButtons = document.querySelectorAll(".accordionButton");
-
-accordionButtons.forEach((accordionButton) => {
-	accordionButton.addEventListener("click", () => {
-		if (accordionButton.classList.contains("accordion-open")) {
-			accordionButton.classList.remove("accordion-open");
-		} else {
-			const openAccordionButtons = document.querySelectorAll(".accordion-open");
-
-			openAccordionButtons.forEach((openAccordionButton) => {
-				openAccordionButton.classList.remove("accordion-open");
-			});
-			accordionButton.classList.add("accordion-open");
-		}
-	});
-});
+//AND WE  USE ONMOUSEHOVER ISTEAD OF ONCLICK
